@@ -1,0 +1,41 @@
+<!doctype html>
+<html>
+<head>
+    <title>Learning Javascript2</title>
+
+    <meta charset="utf-8" />
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+        
+    <style type="text/css" >
+        #circle {
+            width: 200px;
+            height: 200px;
+            border-radius: 100px;
+            background-color: red;
+        }
+    </style>
+    
+</head>
+
+<body>
+
+    <input id="inHello" type="text" placeholder="input here" />
+    <button id="btStyleChanger" >Change the text!</button>
+    <div id="dvFirstDiv">bobo</div>
+    
+    <script type="text/javascript">
+        
+        var newText;
+        
+        document.getElementById("btStyleChanger").onclick = function() {
+            
+            newText = document.getElementById("inHello").value;
+            
+            document.getElementById("dvFirstDiv").innerHTML = newText;
+        }
+        
+    </script>
+    
+</body>
+</html>
